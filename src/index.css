@@ -1,0 +1,47 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Raleway&family=Rufina:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to match vanilla CSS version */
+.homePage_footer {
+  @apply pt-48;
+}
+
+.otherPage_footer {
+  @apply pt-12;
+}
+
+/* Ensure consistency with vanilla CSS */
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.italic {
+  font-family: "Playfair Display", serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a5298;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3c72;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}

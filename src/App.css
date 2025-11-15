@@ -1,0 +1,262 @@
+/* src/App.css */
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article header{
+    text-align: center;
+}
+article section{
+    padding: 0 100px;
+}
+article section p{
+    margin: 12px 0;
+}
+
+/* Navbar Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.homePage_footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 3rem 0;
+}
+
+.otherPage_footer {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Villas Container */
+.villasContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location_text {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.title_text {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.specifications {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.badge {
+    background: #2a5298;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+/* About Page */
+#aboutPage .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#aboutPage img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#aboutPage .content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2a5298;
+}
+
+/* Contact Page */
+#contact {
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2a5298;
+}
+
+#contact .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+#contact .content div {
+    margin-bottom: 1.5rem;
+}
+
+#contact .content p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2a5298;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .nav.show {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav.show ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    #aboutPage .container,
+    #contact .container {
+        grid-template-columns: 1fr;
+    }
+    
+    article section {
+        padding: 0 2rem;
+    }
+    
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+}
