@@ -70,8 +70,8 @@ For questions or suggestions, please open an issue or contact the maintainer.
   2. ```cd VanillaCss_To_TailwindCss_CompleteUI```
 -  Install dependencies for both frontend :
 - Frontend setup:
-  1. ```cd frontend```
-  2. ```npm install```
+  1. ```npm install```
+  2. ```npm run dev```
 
 
 
