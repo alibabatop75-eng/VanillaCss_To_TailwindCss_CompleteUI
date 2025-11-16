@@ -66,8 +66,8 @@ For questions or suggestions, please open an issue or contact the maintainer.
 ## 🧑‍💻 Installation & Setup
 
 - Clone the repository:
-  1. ```git clone https://github.com/your-username/property-rental-platform.git```
-  2. ```cd property-rental-platform```
+  1. ```git clone https://github.com/alibabatop75-eng/VanillaCss_To_TailwindCss_CompleteUI.git```
+  2. ```cd VanillaCss_To_TailwindCss_CompleteUI```
 -  Install dependencies for both frontend :
 - Frontend setup:
   1. ```cd frontend```
