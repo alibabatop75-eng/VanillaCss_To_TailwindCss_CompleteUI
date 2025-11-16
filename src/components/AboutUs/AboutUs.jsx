@@ -1,4 +1,3 @@
-// src/components/AboutUs/AboutUs.jsx
 import React from "react";
 import AboutComponentMini from "../../subComponents/About";
 
@@ -15,8 +14,8 @@ const AboutUs = () => {
             />
           </div>
           <div className="order-1 lg:order-2">
-            <div className="space-y-6">
-              <h3 className="text-3xl lg:text-4xl font-rufina text-green-900">
+            <div className="space-y-6 pt-10">
+              <h3 className="text-3xl lg:text-4xl font-rufina text-gray-700">
                 Your peace of mind, our priority!
               </h3>
               <p className="text-gray-700 leading-relaxed">

@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from "file:///R:/Freelance_Project/new/Real_Estate_Marketplace-main/node_modules/vite/dist/node/index.js";
 import react from "file:///R:/Freelance_Project/new/Real_Estate_Marketplace-main/node_modules/@vitejs/plugin-react-swc/index.js";
 import tailwindcss from "file:///R:/Freelance_Project/new/Real_Estate_Marketplace-main/node_modules/@tailwindcss/vite/dist/index.mjs";

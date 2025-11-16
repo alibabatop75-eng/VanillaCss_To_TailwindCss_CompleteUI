@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-3xl lg:text-4xl font-rufina text-custom-gray">ABOUT US</h1>
+            <h1 className="text-3xl lg:text-4xl font-rufina text-custom-dark">ABOUT US</h1>
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus error sit dignissimos illum optio, numquam molestias quod! Sed?
@@ -21,7 +21,7 @@ const About = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam voluptatibus necessitatibus? Ratione, omnis quo.
               </p>
             </div>
-            <button className="bg-custom-gray text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors duration-300 mt-4">
+            <button className="bg-custom-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors duration-300 mt-4">
               We strive to offer you best possible homes to stay!
             </button>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { villas } from "../../villas";  // ✅ "../../villas" သုံးပါ
+import { villas } from "../../villas";  
 
 const SingleVilla = () => {
   const { id } = useParams();
