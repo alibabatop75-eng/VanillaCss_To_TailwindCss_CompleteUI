@@ -44,17 +44,38 @@ const Contact = () => {
               </div>
             </div>
 
-            <ul className="flex space-x-4">
-              <Link to={"https://facebook.com"} target="_blank" className="text-blue-600 hover:text-blue-800 text-2xl transition-colors">
-                <RiFacebookBoxLine />
-              </Link>
-              <Link to={"https://google.com"} target="_blank" className="text-red-600 hover:text-red-800 text-2xl transition-colors">
-                <FaGoogle />
-              </Link>
-              <Link to={"https://instagram.com"} target="_blank" className="text-pink-600 hover:text-pink-800 text-2xl transition-colors">
-                <FaInstagram />
-              </Link>
-            </ul>
+            <div className="border-t border-gray-200 pt-6">
+                <p className="text- text-gray-600 font-medium mb-4">Follow us on social media</p>
+                <ul className="flex  space-x-3">
+                  <li>
+                    <Link 
+                      to={"https://facebook.com"} 
+                      target="_blank" 
+                      className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 bg-white text-blue-500 hover:bg-blue-500 hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                      <RiFacebookBoxLine className="text-xl" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to={"https://google.com"} 
+                      target="_blank" 
+                      className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-red-500 bg-white text-red-500 hover:bg-red-500 hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                      <FaGoogle className="text-xl" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to={"https://instagram.com"} 
+                      target="_blank" 
+                      className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-pink-500 bg-white text-pink-500 hover:bg-pink-500 hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                      <FaInstagram className="text-xl" />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
           </div>
         </div>
       </div>
